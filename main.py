@@ -5,7 +5,7 @@ from waitress import serve
 razorpay_client = razorpay.Client(auth=("rzp_test_UTtd75CFIcXAzt", "VBB0no9O5Yrbz44NznO7plQA"))
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/pay')
 def app_create():
     # from the checkout page the when the customer hit the "proceed to pay button", a post request will be called to this 
     # endpoind along with the data associated with the purchase.
